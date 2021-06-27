@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "dependencies": {
+    "@whiterussianstudio/tailwind-debug-mq": "^1.1.2",
+    "@whiterussianstudio/tailwind-easing": "^1.0.0",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.25"
+  }
+}

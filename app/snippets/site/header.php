@@ -9,9 +9,6 @@
   <?= snippet('site/seo') ?>
   <?= snippet('site/icons') ?>
 
-  <?= css('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css') ?>
-
-
   <?php if (!option('debug') and $site->scrips_head()->isNotEmpty()) : ?>
     <?= $site->scrips_head() ?>
   <?php endif; ?>

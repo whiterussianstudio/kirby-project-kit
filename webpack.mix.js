@@ -69,7 +69,7 @@ if (conf.static) {
  * BrowserSync (https://browsersync.io/docs/options)
  */
 mix.browserSync({
-  server: conf.public,
+  proxy: '127.0.0.1:8080',
   ghostMode: false,
   notify: false,
   watch: conf.watch || [],

@@ -78,3 +78,7 @@ mix
   .disableNotifications()
   .setPublicPath(conf.public || '')
   .options({ processCssUrls: false })
+
+  if (mix.inProduction()) {
+    mix.version()
+  }

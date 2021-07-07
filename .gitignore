@@ -4,11 +4,6 @@
 Icon
 .DS_Store
 
-# Temporary files
-# ---------------
-/storage/media/*
-!/storage/media/index.html
-
 # Lock files
 # ---------------
 .lock
@@ -46,14 +41,24 @@ Icon
 # ---------------
 /app/config/.license
 
-/public/media
-!/storage/media/index.html
-
 /vendor/
 /kirby/
 
 /app/plugins/*
 !/app/plugins/index.html
+
+# Temporary files
+# ---------------
+/public/media
+
+/public/assets/*
+!/public/assets/index.html
+
+/storage/media/*
+!/storage/media/index.html
+
+/storage/content/*
+!/storage/content/index.html
 
 # Logs
 logs

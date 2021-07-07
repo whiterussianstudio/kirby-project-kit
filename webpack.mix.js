@@ -1,13 +1,9 @@
 const conf = {
+  proxy: 'wrskirbykit.test',
   scripts: 'resources/js/index.js', // String or Array
   styles: 'resources/css/index.css', // String or Array
   // static: 'resources/static',
   public: 'public',
-  watch: [
-    'public/**/*.{css,js}',
-    'app/snippets/**/*.php',
-    'app/templates/**/*.php',
-  ],
   aliases: {
     '@utils': 'resources/js/utils',
     '@components': 'resources/js/components',
@@ -69,10 +65,10 @@ if (conf.static) {
  * BrowserSync (https://browsersync.io/docs/options)
  */
 mix.browserSync({
-  proxy: '127.0.0.1:8080',
+  proxy: conf.proxy || false,
   ghostMode: false,
   notify: false,
-  watch: conf.watch || [],
+  watch: true
 })
 
 /**

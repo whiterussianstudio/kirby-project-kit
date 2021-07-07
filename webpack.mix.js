@@ -3,7 +3,7 @@ const conf = {
   scripts: 'resources/js/index.js', // String or Array
   styles: 'resources/css/index.css', // String or Array
   // static: 'resources/static',
-  public: 'public',
+  public: 'public/assets',
   aliases: {
     '@utils': 'resources/js/utils',
     '@components': 'resources/js/components',
